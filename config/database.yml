@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: tombardier_backend_dev_development
+  database: tombardier_live_demo_backend
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: tombardier_backend_dev_test
+  database: tombardier_live_demo_backend_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: tombardier_backend_dev_production
-  username: tombardier_backend_dev
-  password: <%= ENV['TOMBARDIER_BACKEND_DEV_DATABASE_PASSWORD'] %>
+  database: tombardier_live_demo_backend_production
+  username: tombardier_live_demo_backend
+  password: <%= ENV['TOMBARDIER_LIVE_DEMO_BACKEND_DATABASE_PASSWORD'] %>
