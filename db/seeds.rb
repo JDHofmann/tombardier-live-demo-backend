@@ -13,11 +13,11 @@ zuzu = User.create(
     site_subtitle: "I can finally pursue my dream of coding"
 )
 
-zuzu.image.attach(
-    io: File.open('./public/ethan.jpg'),
-    filename: 'ethan.jpg',
-    content_type: 'application/jpg'
-)
+# zuzu.image.attach(
+#     io: File.open('./public/ethan.jpg'),
+#     filename: 'ethan.jpg',
+#     content_type: 'application/jpg'
+# )
 
 zuzu.user_links.create(
     link_text: "Github",
@@ -35,13 +35,13 @@ candles.project_links.create(
     link_text: "Hello_World!"
 )
 
-candles_image_one = candles.project_images.create(
-    image_caption: "here's a sample image"
-)
+# candles_image_one = candles.project_images.create(
+#     image_caption: "here's a sample image"
+# )
 
-candles_image_one.image.attach(
-    io: File.open('./public/hw.jpg'),
-    filename: 'hw.jpg',
-    content_type: 'application/jpg'
-)
+# candles_image_one.image.attach(
+#     io: File.open('./public/hw.jpg'),
+#     filename: 'hw.jpg',
+#     content_type: 'application/jpg'
+# )
 
